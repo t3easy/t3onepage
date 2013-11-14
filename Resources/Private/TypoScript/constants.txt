@@ -1,0 +1,22 @@
+# Settings
+plugin.tx_t3onepage {
+	url = http://t3onepage.dev/
+	absRefPrefix = /
+
+	general {
+		adminPanel = 0
+	}
+
+	assets {
+		compress = 1
+		merge = 1
+	}
+
+	extensions {
+		realurl = 1
+		sourceopt = 0
+	}
+}
+
+# Include Filepaths
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3onepage/Resources/Private/TypoScript/Constants/Filepaths.ts">

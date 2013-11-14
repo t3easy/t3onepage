@@ -1,0 +1,6 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3onepage/Resources/Private/TypoScript/Setup/Config.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3onepage/Resources/Private/TypoScript/Setup/Page.ts">
+
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3onepage/Resources/Private/TypoScript/Library/lib.logo.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3onepage/Resources/Private/TypoScript/Library/lib.onepage.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3onepage/Resources/Private/TypoScript/Library/lib.footer.ts">
