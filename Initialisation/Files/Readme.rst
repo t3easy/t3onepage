@@ -1,0 +1,1 @@
+Files in this directory will be copied to fileadmin/t3onepage/ during installation

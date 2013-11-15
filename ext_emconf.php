@@ -3,7 +3,7 @@
 $EM_CONF[$_EXTKEY] = array(
 	'title' => 't3onepage',
 	'description' => '',
-	'category' => 'templates',
+	'category' => 'distribution',
 	'author' => 'Maximilian Mayer',
 	'author_email' => 'maximilian.mayer@compuart.com',
 	'author_company' => 'compuart.com',
