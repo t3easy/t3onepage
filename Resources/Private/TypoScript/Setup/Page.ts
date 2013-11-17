@@ -30,9 +30,6 @@ page {
 
 	# Include CSS Files
 	includeCSS {
-        sourcesanspro = http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic
-        sourcesanspro.external = 1
-        sourcesanspro.media = all
         style = {$plugin.tx_t3onepage.filepaths.css}style.css
         style.media = all
     }
@@ -45,6 +42,17 @@ page {
 	includeJSFooter {
 		jquery = {$plugin.tx_t3onepage.filepaths.javascript}vendor/jquery-1.10.2.min.js
 		custom = {$plugin.tx_t3onepage.filepaths.javascript}jquery.custom.js
+		
+		webfont = {$plugin.tx_t3onepage.filepaths.javascript}vendor/webfont-1.4.7.js
+		webfont {
+			excludeFromConcatenation = 1
+        	disableCompression = 1
+		}
+		webfontload = {$plugin.tx_t3onepage.filepaths.javascript}webfont.load.js
+		webfontload {
+			excludeFromConcatenation = 1
+	        disableCompression = 1
+        }
 	}
 
 	# Meta
