@@ -24,10 +24,6 @@ if ($configuration['addUserTSConfig'] == TRUE) {
 	);
 }
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig(
-	'<INCLUDE_TYPOSCRIPT: source="FILE:EXT:' . $_EXTKEY . '/Resources/Private/TsConfig/User/config.ts">'
-);
-
 $newPageColumns = array(
 	'css_id' => array(
 		'exclude' => 0,
