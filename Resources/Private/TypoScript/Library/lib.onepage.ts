@@ -24,7 +24,7 @@ lib.onepage {
 						key.field = doktype
 						default = TEXT
 						default {
-							typolink.parameter = #{field:subtitle}
+							typolink.parameter = #{field:css_id}
 							typolink.parameter.insertData = 1
 
 							field = nav_title
