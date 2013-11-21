@@ -50,3 +50,8 @@ TCEFORM.tt_content.layout{
 		101 = infos
 	}
 }
+	# To extend the css class selection in the backend copy this to
+	# your page TSconfig and add your classes and backend labels
+#TCEFORM.pages.css_class.addItems {
+	#class = Backend label for class
+#}

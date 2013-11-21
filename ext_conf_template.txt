@@ -1,0 +1,4 @@
+	# cat=basic; type=boolean; label=LLL:EXT:t3onepage/Resources/Private/Language/locallang_be.xlf:configuration.addPageTSConfig
+addPageTSConfig = 1
+	# cat=basic; type=boolean; label=LLL:EXT:t3onepage/Resources/Private/Language/locallang_be.xlf:configuration.addUserTSConfig
+addUserTSConfig = 1

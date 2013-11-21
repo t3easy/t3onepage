@@ -1,18 +1,67 @@
 <?php
+
 if (!defined('TYPO3_MODE')) {
 	die ('Access denied.');
 }
 
-t3lib_extMgm::addStaticFile($_EXTKEY, 'Resources/Private/TypoScript/', 't3onepage');
+$configuration = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY]);
 
-// Add page TSConfig
-$pageTsConfig = \TYPO3\CMS\Core\Utility\GeneralUtility::getUrl(
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($_EXTKEY) . 'Resources/Private/TsConfig/Page/config.ts');
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig($pageTsConfig);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
+	$_EXTKEY, 'Resources/Private/TypoScript/', 't3onepage'
+);
 
-// Add user TSConfig
-$userTsConfig = \TYPO3\CMS\Core\Utility\GeneralUtility::getUrl(
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($_EXTKEY) . 'Resources/Private/TsConfig/User/config.ts');
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig($userTsConfig);
+	// Add page TSConfig
+if ($configuration['addPageTSConfig'] == TRUE) {
+	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
+		'<INCLUDE_TYPOSCRIPT: source="FILE:EXT:' . $_EXTKEY . '/Resources/Private/TsConfig/Page/config.ts">'
+	);
+}
 
-?>
+	// Add user TSConfig
+if ($configuration['addUserTSConfig'] == TRUE) {
+	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig(
+		'<INCLUDE_TYPOSCRIPT: source="FILE:EXT:' . $_EXTKEY . '/Resources/Private/TsConfig/User/config.ts">'
+	);
+}
+
+$newPageColumns = array(
+	'css_id' => array(
+		'exclude' => 0,
+		'label' => 'LLL:EXT:t3onepage/Resources/Private/Language/locallang_db.xlf:pages.css_id',
+		'config' => array(
+			'type' => 'input',
+			'size' => 30,
+			'eval' => 'trim, unique, alphanum_x'
+		),
+	),
+	'css_class' => array(
+		'exclude' => 0,
+		'label' => 'LLL:EXT:t3onepage/Resources/Private/Language/locallang_db.xlf:pages.css_class',
+		'config' => array(
+			'type' => 'select',
+			'items' => array(
+				array('LLL:EXT:t3onepage/Resources/Private/Language/locallang_db.xlf:pages.css_class.none', ''),
+				array('LLL:EXT:t3onepage/Resources/Private/Language/locallang_db.xlf:pages.css_class.dark-section', 'dark-section'),
+				array('LLL:EXT:t3onepage/Resources/Private/Language/locallang_db.xlf:pages.css_class.highlight-section', 'highlight-section'),
+				array('LLL:EXT:t3onepage/Resources/Private/Language/locallang_db.xlf:pages.css_class.feature-section', 'feature-section'),
+			),
+			'size' => 1,
+			'maxitems' => 1,
+			'eval' => ''
+		),
+	),
+);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('pages', $newPageColumns);
+
+$TCA['pages']['palettes']['t3onepage'] = array(
+	'canNotCollapse' => 1,
+	'showitem' => 'css_id, css_class'
+);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
+	'pages',
+	'--palette--;LLL:EXT:t3onepage/Resources/Private/Language/locallang_db.xlf:pages.palettes.t3onepage;t3onepage,',
+	'',
+	'after:layout'
+);
