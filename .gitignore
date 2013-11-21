@@ -1,4 +1,4 @@
 *.sass-cache
 *.scssc
-*.sass
+*.scss
 *.rb
