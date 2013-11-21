@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-11-18T10:11:05Z" product-name="t3onepage">
+		<header/>
+		<body>
+			<trans-unit id="configuration.addPageTSConfig">
+				<source>Add page TSconfig</source>
+			</trans-unit>
+			<trans-unit id="configuration.addUserTSConfig">
+				<source>Add user TSconfig</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
