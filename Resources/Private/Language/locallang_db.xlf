@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-11-18T10:11:05Z" product-name="t3onepage">
+		<header/>
+		<body>
+			<trans-unit id="pages.palettes.t3onepage">
+				<source>One page settings</source>
+			</trans-unit>
+			<trans-unit id="pages.css_id">
+				<source>CSS Id</source>
+			</trans-unit>
+			<trans-unit id="pages.css_class">
+				<source>CSS Class</source>
+			</trans-unit>
+			<trans-unit id="pages.css_class.none">
+				<source>None (Default)</source>
+			</trans-unit>
+			<trans-unit id="pages.css_class.dark-section">
+				<source>Dark section</source>
+			</trans-unit>
+			<trans-unit id="pages.css_class.highlight-section">
+				<source>Highlight section</source>
+			</trans-unit>
+			<trans-unit id="pages.css_class.feature-section">
+				<source>Feature section</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

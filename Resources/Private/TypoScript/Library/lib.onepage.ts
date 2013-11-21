@@ -54,7 +54,7 @@ lib.onepage {
 					pidInList.field = uid
 					orderBy = sorting
 				}
-				wrap = <section id="{field:subtitle}">|</section>
+				wrap = <section id="{field:css_id}" class="{field:css_class}">|</section>
 				wrap.insertData = 1
 			}
 		}
