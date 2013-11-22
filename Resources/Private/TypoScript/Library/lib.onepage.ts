@@ -7,7 +7,7 @@ lib.onepage {
 
 		20 = HMENU
 		20 {
-			wrap = <nav class="navigation">|</nav>
+			wrap = <nav role="navigation"><h2 class="vh">main navigation</h2>|</nav>
 
 			1 = TMENU
 			1 {
@@ -34,10 +34,10 @@ lib.onepage {
 						}
 					}
 				}
-				wrap = <ul class="clearfix">|</ul>
+				wrap = <ul class="navigation">|</ul>
 			}
 		}
-		wrap = <header id="header"><div class="wrapper clearfix">|</div></header>
+		wrap = <header id="header" role="banner"><div class="wrapper clearfix">|</div></header>
 	}
 
 	20 = CONTENT
@@ -58,5 +58,7 @@ lib.onepage {
 				wrap.insertData = 1
 			}
 		}
+		
+		wrap = <main role="main">|</main>
 	}
 }

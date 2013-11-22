@@ -1,0 +1,31 @@
+@import "compass";                // include compass lib
+
+// base
+@import "base/variables";         // variables
+@import "base/font-face";         // font-face
+@import "base/mixins";            // Default project mixins
+@import "base/mq-ie";             // @media query mixins w/ oldie fallback
+@import "base/normalize";         // CSS normalize.css reset
+@import "base/h5bp-styles";       // HTML5 Boilerplate styles
+@import "base/defaults";          // Default project config options
+
+// layout
+@import "layout/layout";          // layout
+@import "layout/navigations";     // navigations
+@import "base/placeholders";      // placeholders
+
+// partials
+@import "partials/typo3-styles";  // TYPO3 modules
+
+// modules
+@import "modules/modules";        // modules
+
+// plugins
+@import "plugins/responsive-nav"; // modules
+
+// print styles if needed
+//@import "base/print";
+
+// DEBUG MODE
+$debug: false;
+@import "base/debug";             // modules

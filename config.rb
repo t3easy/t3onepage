@@ -9,14 +9,13 @@ javascripts_dir = "Resources/Public/JavaScript"
 fonts_dir = "Resources/Public/Fonts"
 generated_images_dir = "Resources/Public/Images"
 
-# require 'rgbapng'
 #environment = :development
 environment = :production
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
 #output_style = :compact
-output_style = (environment == :production) ? :compressed : :compact
+output_style = (environment == :production) ? :compressed : :expanded
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
 relative_assets = true
@@ -25,10 +24,3 @@ line_comments = false
 
 asset_cache_buster :none
 #asset_cache_buster {|*args| nil }
-
-#require 'breakpoint'
-# Have Growl? http://growl.info
-# 1. run `gem install compass-growl`
-# 2. uncomment the following:
-# require "compass-growl"
-# require 'ninesixty'

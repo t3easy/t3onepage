@@ -1,0 +1,29 @@
+/* Navigations
+ * ===================================================================
+ */
+.navigation {
+	@extend %clearfix;
+	@extend %list-reset;
+	float: right;
+	width: 90%;
+
+	> li {
+		padding: 0;
+		display: inline-block;
+		margin-right: -4px;
+
+		> a {
+			color: $white;
+			font-weight: 400;
+			padding: 0.5em 1em;
+			@include transition(color .4s ease);
+		}
+
+		> a:hover,
+		> a:focus,
+		&.is-active > a {
+			color: $color-secondary;
+			outline: none;
+		}
+	}
+}

@@ -1,0 +1,110 @@
+/* Layout
+ * ===================================================================
+ */
+
+body {
+	@include font($source-sans, $base-fontsize, 400);
+	margin-bottom: 0;
+
+	@include respond-min($middle) {
+		@include font($source-sans, 20px, 300);
+		margin-bottom: 0;
+	}
+}
+
+
+.wrapper {
+	@extend %clearfix;
+	@extend %center-block;
+	width: 92%;
+
+	@include respond-min($containerMax) {
+		width: 96%;
+	}
+	@include old-ie {
+		min-width: $containerMax;
+	}
+}
+
+
+//header
+[role="banner"] {
+	width: 100%;
+	background: $color-main;
+	position: relative;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	@media only screen and (orientation: portrait) {
+		position: fixed;
+	}
+	@include respond-min($middle) {
+		position: fixed;
+		padding: 0.5em 0;
+	}
+}
+
+// content
+main {
+
+}
+
+// aside
+[role="complemetary"] {
+
+}
+// navigation
+[role="navigation"] {
+	text-align: right;
+}
+
+//footer
+[role="contentinfo"] {
+	@include x-rem(14px);
+	padding: 1em 0;
+}
+
+section {
+	padding-top: em(50px);
+	@include respond-min($middle) {
+		padding-top: em(100px);
+	}
+
+	header + & {
+		padding-top: em(50px);
+	}
+}
+
+// specific layout styles
+.logo {
+	float: left;
+	width: 35px;
+	height: 50px;
+	@include respond-min($middle) {
+		width: 50px;
+	}
+	// PNG Fallback
+}
+
+.infos {
+	padding: 2em;
+	background-color: $lightergrey;
+}
+
+.highlight-section {
+	@extend %highlight-section;
+}
+
+.feature-section,
+.dark-section {
+	@extend %dark-section;
+}
+
+.copyright {
+	margin-bottom: 0;
+}
+
+.btn,
+a.btn {
+	@extend %button-base;
+}

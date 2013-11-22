@@ -1,0 +1,48 @@
+$fix-mqs: false !default;
+
+@mixin respond-min($width) {
+	@if $fix-mqs {
+		@if $fix-mqs >= $width {
+			@content;
+		}
+	}
+	@else {
+		@media screen and (min-width: em($width)) {
+			@content;
+		}
+	}
+}
+@mixin respond-max($width) {
+	@if $fix-mqs {
+		@if $fix-mqs < $width {
+			@content;
+		}
+	}
+	@else {
+		@media screen and (max-width: em($width)) {
+			@content;
+		}
+	}
+}
+
+$old-ie: false !default;
+
+@mixin old-ie {
+	@if $old-ie {
+		@content;
+	}
+}
+
+@-webkit-viewport { width : device-width; }
+@-moz-viewport { width : device-width; }
+@-ms-viewport { width : device-width; }
+@-o-viewport { width : device-width; }
+@viewport { width : device-width; }
+
+// fix WP8 viewport bug
+@include respond-max(400px) {
+	@-ms-viewport {
+		width: 320px;
+	}
+}
+

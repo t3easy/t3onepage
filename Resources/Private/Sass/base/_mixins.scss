@@ -1,0 +1,48 @@
+@import "mixins/misc";
+@import "mixins/math";
+@import "mixins/hidpi";
+
+@import "mixins/rem";
+@import "mixins/linear-gradient";
+
+
+
+
+
+// simple calc-mixin
+@mixin calc($property, $value) {
+	#{$property}: -webkit-calc(#{$value});
+	#{$property}: calc(#{$value});
+}
+
+
+// @Mixin $Measure-Margin from http://typeplate.com/
+// -------------------------------------//
+// divide 1 unit of measure by given font-size & return a relative em value
+@mixin measure-margin($font-size: $base-fontsize, $line-height: $base-lineheight, $value: em) {
+	margin-bottom: (strip-units($font-size) / ($line-height * strip-units($base-fontsize)))#{$value};
+}
+
+
+// Font
+@mixin font($family: false, $size: false, $weight: false, $style: false) {
+  @if ($webfont) {
+    .wf-active & {
+      font-family: $family;
+    }
+  }
+  @else {
+    font-family: $family;
+  }
+  @if ($size) {
+    @include x-rem($size);
+    @include measure-margin($size);
+  }
+  @if ($weight) {
+    font-weight: $weight;
+  }
+  @if ($style) {
+    font-style: $style;
+  }
+}
+

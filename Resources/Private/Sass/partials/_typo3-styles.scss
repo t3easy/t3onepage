@@ -1,0 +1,65 @@
+// .tx-felogin-pi1 label{display:block}
+.csc-header-alignment-center{text-align:center}
+.csc-header-alignment-right{text-align:right}
+.csc-header-alignment-left{text-align:left}
+// div.csc-textpic,div.csc-textpic div.csc-textpic-imagerow,ul.csc-uploads li{overflow:hidden}
+// div.csc-textpic .csc-textpic-imagewrap table{border-collapse:collapse;border-spacing:0}
+// div.csc-textpic .csc-textpic-imagewrap table tr td{padding:0;vertical-align:top}
+// div.csc-textpic .csc-textpic-imagewrap figure,div.csc-textpic figure.csc-textpic-imagewrap{margin:0;display:table}
+// figcaption.csc-textpic-caption{display:table-caption}
+// .csc-textpic-caption{text-align:left;caption-side:bottom}
+// div.csc-textpic-caption-c .csc-textpic-caption,.csc-textpic-imagewrap .csc-textpic-caption-c{text-align:center}
+// div.csc-textpic-caption-r .csc-textpic-caption,.csc-textpic-imagewrap .csc-textpic-caption-r{text-align:right}
+// div.csc-textpic-caption-l .csc-textpic-caption,.csc-textpic-imagewrap .csc-textpic-caption-l{text-align:left}
+// div.csc-textpic div.csc-textpic-imagecolumn{float:left}
+// div.csc-textpic-border div.csc-textpic-imagewrap img{border:2px solid black;padding:0px 0px}
+// div.csc-textpic .csc-textpic-imagewrap img{border:none;display:block}
+// div.csc-textpic .csc-textpic-imagewrap .csc-textpic-image{margin-bottom:10px}
+// div.csc-textpic .csc-textpic-imagewrap .csc-textpic-imagerow-last .csc-textpic-image{margin-bottom:0}
+// div.csc-textpic-imagecolumn,td.csc-textpic-imagecolumn .csc-textpic-image{margin-right:10px}
+// div.csc-textpic-imagecolumn.csc-textpic-lastcol,td.csc-textpic-imagecolumn.csc-textpic-lastcol .csc-textpic-image{margin-right:0}
+// div.csc-textpic-intext-left .csc-textpic-imagewrap,div.csc-textpic-intext-left-nowrap .csc-textpic-imagewrap{margin-right:10px}
+// div.csc-textpic-intext-right .csc-textpic-imagewrap,div.csc-textpic-intext-right-nowrap .csc-textpic-imagewrap{margin-left:10px}
+// div.csc-textpic-center .csc-textpic-imagewrap,div.csc-textpic-center figure.csc-textpic-imagewrap{overflow:hidden}
+// div.csc-textpic-center .csc-textpic-center-outer{position:relative;float:right;right:50%}
+// div.csc-textpic-center .csc-textpic-center-inner{position:relative;float:right;right:-50%}
+// div.csc-textpic-right .csc-textpic-imagewrap{float:right}
+// div.csc-textpic-right div.csc-textpic-text{clear:right}
+// div.csc-textpic-left .csc-textpic-imagewrap{float:left}
+// div.csc-textpic-left div.csc-textpic-text{clear:left}
+// div.csc-textpic-intext-left .csc-textpic-imagewrap{float:left}
+// div.csc-textpic-intext-right .csc-textpic-imagewrap{float:right}
+// div.csc-textpic-intext-right-nowrap .csc-textpic-imagewrap{float:right}
+// div.csc-textpic-intext-left-nowrap .csc-textpic-imagewrap{float:left}
+// div.csc-textpic div.csc-textpic-imagerow-last,div.csc-textpic div.csc-textpic-imagerow-none div.csc-textpic-last{margin-bottom:0}
+// .csc-textpic-intext-left ol,.csc-textpic-intext-left ul{padding-left:40px;overflow:auto}
+// ul.csc-uploads{padding:0}
+// ul.csc-uploads li{list-style:none outside none;margin:1em 0}
+// ul.csc-uploads img{float:left;padding-right:1em;vertical-align:top}
+// ul.csc-uploads span{display:block}
+// ul.csc-uploads span.csc-uploads-fileName{text-decoration:underline}
+// table.contenttable-color-1{background-color:#EDEBF1}
+// table.contenttable-color-2{background-color:#F5FFAA}
+// table.contenttable-color-240{background-color:black}
+// table.contenttable-color-241{background-color:white}
+// table.contenttable-color-242{background-color:#333333}
+// table.contenttable-color-243{background-color:gray}
+// table.contenttable-color-244{background-color:silver}
+// .csc-textpic-intext-right-nowrap .csc-textpic-text{margin-right:310px}
+// .csc-textpic-intext-left-nowrap .csc-textpic-text{margin-left:310px}
+
+
+// === === TYPO3 HELPER CLASS === === ===
+.align-center { text-align: center; }
+
+.csc-textpic-text {
+	width: auto;
+	margin: 0 auto;
+
+	@media only screen and (min-width: 960px) {
+		width: 735px;
+	}
+}
+
+.csc-textpic-imagewrap { margin: 30px 0 0 0; }
+div.csc-textpic .csc-textpic-imagewrap .csc-textpic-image { margin: 0; }
