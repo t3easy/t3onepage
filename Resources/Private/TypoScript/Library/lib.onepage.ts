@@ -11,7 +11,6 @@ lib.onepage {
 
 			1 = TMENU
 			1 {
-				noBlur = 1
 				expAll = 1
 
 				NO = 1
