@@ -60,6 +60,7 @@ lib.onepage {
 				select {
 					pidInList.field = uid
 					orderBy = sorting
+					where = colPos = 0
 				}
 				wrap = <section id="{field:css_id}" class="{field:css_class}">|</section>
 				wrap.insertData = 1
