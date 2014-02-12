@@ -16,6 +16,16 @@ plugin.tx_t3onepage {
 		realurl = 1
 		sourceopt = 0
 	}
+
+	settings {
+		# customsubcategory=analytics=LLL:EXT:t3onepage/Resources/Private/Language/locallang.xlf:analytics
+		# cat=plugin.t3onepage/analytics/10; type=boolean; label= Analytics Enable
+		analyticsEnable = 1
+		# cat=plugin.t3onepage/analytics/20; type=string; label= Analytics UA-XXXXXX
+		analyticsUA = UA-XXXXXX
+		# cat=plugin.t3onepage/analytics/30; type=string; label= Analytics Domain
+        analyticsUrl = onepage.compuart.com
+	}
 }
 
 # Include Filepaths

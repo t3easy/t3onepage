@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-02-12T19:38:01Z" product-name="t3onepage">
+		<header/>
+		<body>
+			<trans-unit id="analytics" xml:space="preserve">
+				<source>Google Analytics</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

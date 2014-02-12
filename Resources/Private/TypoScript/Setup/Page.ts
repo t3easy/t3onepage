@@ -53,6 +53,23 @@ page {
 
 }
 
+# Google Analytics
+[globalVar = LIT:1 = {$plugin.tx_t3onepage.settings.analyticsEnable}]
+page.footerData.555 = TEXT
+page.footerData.555.value (
+<script>
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ ga('create', '{$plugin.tx_t3onepage.settings.analyticsUA}', '{$plugin.tx_t3onepage.settings.analyticsUrl}');
+ ga('send', 'pageview');
+
+</script>
+)
+[global]
+
 ## CE
 tt_content.stdWrap.innerWrap.cObject = CASE
 tt_content.stdWrap.innerWrap.cObject {
