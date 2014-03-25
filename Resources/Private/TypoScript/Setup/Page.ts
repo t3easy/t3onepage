@@ -33,6 +33,14 @@ page {
 		style = {$plugin.tx_t3onepage.filepaths.css}style.css
 		style.media = all
 	}
+	
+	
+	# Javascripts in header
+	headerData.999 = TEXT
+	headerData.999.value (
+		<script src="{$plugin.tx_t3onepage.filepaths.javascript}matchmedia.js"></script>
+		<script src="{$plugin.tx_t3onepage.filepaths.javascript}picturefill.js"></script>
+	)	
 
 	# Include JS Files
 	includeJS {
