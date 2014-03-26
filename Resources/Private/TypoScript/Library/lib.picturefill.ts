@@ -8,7 +8,7 @@ tt_content.image.20.1.layout.picturefill {
         </noscript>
     </span>
 	)
-	source = <span data-src="###SRC###" data-media="###MEDIAQUERY###"</span>
+	source = <span data-src="###SRC###" data-media="###MEDIAQUERY###"></span>
 }
 
 tt_content.image.20.1.sourceCollection {
