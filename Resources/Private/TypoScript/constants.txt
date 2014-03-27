@@ -1,5 +1,7 @@
 # Settings
 plugin.tx_t3onepage {
+	# customsubcategory=onepage=LLL:EXT:t3onepage/Resources/Private/Language/locallang.xlf:onepage
+	# cat=plugin.t3onepage/onepage/10; type=boolean; label= t3onepage BaseURL
 	url = http://t3onepage.dev/
 	absRefPrefix = /
 
@@ -8,7 +10,9 @@ plugin.tx_t3onepage {
 	}
 
 	assets {
+		# cat=plugin.t3onepage/onepage/20; type=boolean; label= Compress JS & CSS
 		compress = 1
+		# cat=plugin.t3onepage/onepage/30; type=boolean; label= Merge JS & CSS
 		merge = 1
 	}
 
