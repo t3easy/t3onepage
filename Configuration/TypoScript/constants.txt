@@ -33,7 +33,7 @@ plugin.tx_t3onepage {
 }
 
 # Include Filepaths
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3onepage/Resources/Private/TypoScript/Constants/Filepaths.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3onepage/Configuration/TypoScript/Constants/Filepaths.ts">
 
 # responive images
 styles.content.imgtext.responsive = 1

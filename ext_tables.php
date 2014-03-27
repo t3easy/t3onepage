@@ -7,20 +7,26 @@ if (!defined('TYPO3_MODE')) {
 $configuration = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY]);
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
-	$_EXTKEY, 'Resources/Private/TypoScript/', 't3onepage'
+	$_EXTKEY, 'Configuration/TypoScript/', 't3onepage'
 );
 
-	// Add page TSConfig
+
+/**
+ * Add page TSConfig
+ */
 if ($configuration['addPageTSConfig'] == TRUE) {
 	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
-		'<INCLUDE_TYPOSCRIPT: source="FILE:EXT:' . $_EXTKEY . '/Resources/Private/TsConfig/Page/config.ts">'
+		'<INCLUDE_TYPOSCRIPT: source="FILE:EXT:' . $_EXTKEY . '/Configuration/TsConfig/Page/config.ts">'
 	);
 }
 
-	// Add user TSConfig
+
+/**
+ * Add user TSConfig
+ */
 if ($configuration['addUserTSConfig'] == TRUE) {
 	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig(
-		'<INCLUDE_TYPOSCRIPT: source="FILE:EXT:' . $_EXTKEY . '/Resources/Private/TsConfig/User/config.ts">'
+		'<INCLUDE_TYPOSCRIPT: source="FILE:EXT:' . $_EXTKEY . '/Configuration/TsConfig/User/config.ts">'
 	);
 }
 

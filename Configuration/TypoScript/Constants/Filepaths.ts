@@ -4,6 +4,6 @@ plugin.tx_t3onepage {
 		images = EXT:t3onepage/Resources/Public/Images/
 		javascript = EXT:t3onepage/Resources/Public/JavaScript/
 		templates = EXT:t3onepage/Resources/Private/Templates/
-		ts = EXT:t3onepage/Resources/Private/TypoScript/
+		ts = EXT:t3onepage/Configuration/TypoScript/
 	}
 }
