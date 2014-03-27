@@ -16,7 +16,7 @@ $configuration = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXT
  */
 if ($configuration['addPageTSConfig'] == TRUE) {
 	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
-		'<INCLUDE_TYPOSCRIPT: source="FILE:EXT:' . $_EXTKEY . '/Configuration/TsConfig/Page/config.ts">'
+		'<INCLUDE_TYPOSCRIPT: source="FILE:EXT:' . $_EXTKEY . '/Configuration/TSconfig/Page/config.ts">'
 	);
 }
 
@@ -26,7 +26,7 @@ if ($configuration['addPageTSConfig'] == TRUE) {
  */
 if ($configuration['addUserTSConfig'] == TRUE) {
 	\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig(
-		'<INCLUDE_TYPOSCRIPT: source="FILE:EXT:' . $_EXTKEY . '/Configuration/TsConfig/User/config.ts">'
+		'<INCLUDE_TYPOSCRIPT: source="FILE:EXT:' . $_EXTKEY . '/Configuration/TSconfig/User/config.ts">'
 	);
 }
 
