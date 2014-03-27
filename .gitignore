@@ -1,2 +1,13 @@
-*.sass-cache
-*.scssc
+*~
+.DS_Store
+.svn
+.cvs
+*.bak
+*.swp
+Thumbs.db
+workspace.xml
+.idea/
+*.log
+
+node_modules
+.sass-cache
