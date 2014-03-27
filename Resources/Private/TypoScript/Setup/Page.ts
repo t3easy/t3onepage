@@ -14,9 +14,6 @@ page {
 
 			1 = TEXT
 			1.value = {$plugin.tx_t3onepage.filepaths.templates}main.html
-
-			2 = TEXT
-			2.value = {$plugin.tx_t3onepage.filepaths.templates}home.html
 		}
 		partialRootPath = {$plugin.tx_t3onepage.filepaths.templates}Partials/
 		layoutRootPath = {$plugin.tx_t3onepage.filepaths.templates}Layouts/
