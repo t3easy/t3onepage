@@ -1,0 +1,12 @@
+options {
+	pageTree {
+		showPageIdWithTitle = 1
+	}
+}
+
+admPanel {
+	enable.edit = 1
+	enable.info = 1
+}
+
+options.clearCache.system = 1
