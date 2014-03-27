@@ -44,7 +44,8 @@ config {
 	sendCacheHeaders = 1
 
 	headerComment (
-t3onepage powered by Maximilian Mayer
-—————————————————————————————————————
+Based on t3onepage
+github.com/maximilian-mayer/t3onepage/
+——————————————————————————————————————
 	)
 }
