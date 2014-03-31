@@ -1,8 +1,5 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3onepage/Configuration/TypoScript/Setup/Config.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3onepage/Configuration/TypoScript/Setup/Page.ts">
 
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3onepage/Configuration/TypoScript/Library/lib.logo.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3onepage/Configuration/TypoScript/Library/lib.onepage.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3onepage/Configuration/TypoScript/Library/lib.footer.ts">
-
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3onepage/Configuration/TypoScript/Library/lib.picturefill.ts">
+	# Include libraries
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:t3onepage/Configuration/TypoScript/Library" extensions="ts">
