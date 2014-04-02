@@ -37,7 +37,7 @@ $newPageColumns = array(
 		'config' => array(
 			'type' => 'input',
 			'size' => 30,
-			'eval' => 'trim, unique, alphanum_x'
+			'eval' => 'nospace,alphanum_x,lower,unique'
 		),
 	),
 	'css_class' => array(
