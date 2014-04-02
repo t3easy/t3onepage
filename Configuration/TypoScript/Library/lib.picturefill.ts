@@ -3,6 +3,9 @@ tt_content.image.20.1.layout.picturefill {
 	element (
 		<span data-picture="">
         ###SOURCECOLLECTION###
+		<!--[if (lt IE 9) & (!IEMobile)]>
+            <span data-src="###SRC###"></span>
+        <![endif]-->
         <noscript>
             <img src="###SRC###" ###PARAMS### ###ALTPARAMS######SELFCLOSINGTAGSLASH###>
         </noscript>
