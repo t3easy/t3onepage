@@ -1,4 +1,20 @@
-<div id="t3onepage">
-	<f:cObject typoscriptObjectPath="lib.onepage" />
-	<f:render partial="footer"/>
-</div>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+<head>
+	<meta charset="utf-8">
+	<title>Default page template</title>
+	<link rel="stylesheet" type="text/css" href="../../Public/Stylesheets/style.css" media="all">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="X-UA-Compatible" content="IE=edge,chrome=1">
+</head>
+<body>
+<f:layout name="Default"/>
+<f:section name="Main">
+	<div id="t3onepage">
+		<f:cObject typoscriptObjectPath="lib.onepage" />
+		<f:render partial="footer" section="Main" />
+	</div>
+</f:section>
+</body>
+</html>
