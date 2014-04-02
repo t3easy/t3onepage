@@ -1,3 +1,6 @@
+	# Include constants from other extensions
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:css_styled_content/static/constants.txt">
+
 # Settings
 plugin.tx_t3onepage {
 	# customsubcategory=onepage=LLL:EXT:t3onepage/Resources/Private/Language/locallang.xlf:onepage

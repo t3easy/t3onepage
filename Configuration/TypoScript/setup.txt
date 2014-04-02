@@ -1,3 +1,6 @@
+	# Include setup from other extensions
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:css_styled_content/static/setup.txt">
+
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3onepage/Configuration/TypoScript/Setup/Config.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:t3onepage/Configuration/TypoScript/Setup/Page.ts">
 
