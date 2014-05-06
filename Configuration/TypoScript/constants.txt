@@ -4,7 +4,7 @@
 # Settings
 plugin.tx_t3onepage {
 	# customsubcategory=onepage=LLL:EXT:t3onepage/Resources/Private/Language/locallang.xlf:onepage
-	# cat=plugin.t3onepage/onepage/10; type=boolean; label= t3onepage BaseURL
+	# cat=plugin.t3onepage/onepage/10; type=string; label= t3onepage BaseURL
 	url = http://t3onepage.dev/
 	absRefPrefix = /
 
